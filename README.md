@@ -30,15 +30,9 @@ Fail
 
 #Endpoints:
 
-Листинг всех пользователей
-GET  /users
+| Method | Endpoints | Description |
+| --- | --- | --- |
+| POST | /auth | Авторизация, JSON ( {"login":"%PHONE_NUMBER%"} ) |
+| GET | /users | Листинг всех пользователей |
+| GET | /events | Листинг всех типов евентов |
 
-
-Авторизация
-POST /auth
-Required : Json ( login )
-Ex: {"login":"3317809668"}
-
-
-Листинг всех типов евентов
-GET  /events
