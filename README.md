@@ -4,7 +4,9 @@
 
 Это репозиторий API.
 
-
+# Install
+* composer install
+* php artisan migrate
 
 # API
 
