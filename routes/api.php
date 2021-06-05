@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Models\User;
+use App\Models\Event;
 
 
 /*
@@ -52,6 +53,18 @@ Route::get('users',function(){
     $msg = [
         'error' => 0,
         'users' => $user
+    ];
+
+    return response()->json($msg);
+    
+});
+
+Route::get('events',function(){
+    $event = Event::all();
+
+    $msg = [
+        'error' => 0,
+        'events' => $event
     ];
 
     return response()->json($msg);
