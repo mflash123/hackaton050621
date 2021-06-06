@@ -2,7 +2,10 @@
 
 Приложение спортивных мероприятий.
 
+
 Это репозиторий API.
+
+Репозиторий клиента здесь: https://github.com/KaRtoHHka/PSB.git
 
 # Install
 * composer install
